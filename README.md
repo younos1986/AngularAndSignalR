@@ -4,8 +4,8 @@ A part of the sample is taken from <a href='https://code-maze.com/netcore-signal
 
 
   <img
-       width="320" height="240"
-       src="https://raw.githubusercontent.com/younos1986/AngularAndSignalR/master/docs/videos/AngularAndSignalR.mp4" type="video/mp4" />
+       width="500px" height="500px"
+       src="https://raw.githubusercontent.com/younos1986/AngularAndSignalR/master/docs/videos/AngularAndSignalR.gif" type="video/mp4" />
       
 
 
