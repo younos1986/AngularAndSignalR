@@ -12,8 +12,10 @@ A part of the sample is taken from <a href='https://code-maze.com/netcore-signal
 
 
 
+# Configuration 
 
-
+First add SignalR middleware to startup.cs. Then define the hubs to communicate with clients
+MapHub is a generic method that accepts a model to transfer
 ```
       // ConfigureServices
       services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
@@ -33,10 +35,23 @@ A part of the sample is taken from <a href='https://code-maze.com/netcore-signal
             
 ```
 
+Then registers a handler that will be invoked when the hub method with the specified method name (`transferchartSignoutdata` ) is invoked.
+
+the invoke result will be here
+```
+// Angular SignalRService
+this.hubConnection.on('transferchartSignoutdata', (data) => {
+      console.log(data);
+});
 
 ```
 
+Whenever you want to send a message to clients, use `_hub.Clients.All.SendAsync("transferchartSignoutdata", signoutModel);`
 
+
+# Controller
+
+```
 [Route("api/[controller]")]
     [ApiController]
     [Microsoft.AspNetCore.Cors.EnableCors("CorsPolicy")]
@@ -65,7 +80,7 @@ A part of the sample is taken from <a href='https://code-maze.com/netcore-signal
 
 ```
 
-
+# SignalRService
 
 ```
 
@@ -116,6 +131,8 @@ export class SignalRService {
 
 ```
 
+
+# AppComponent
 
 ```
 
