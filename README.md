@@ -148,7 +148,7 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
   title = 'AngularAndSignalR';
 
-  /** Chart ctor */
+  /** AppComponent ctor */
   constructor(public signalRService: SignalRService, private http: HttpClient) { }
 
   ngOnInit() {
