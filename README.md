@@ -23,6 +23,25 @@ A hub is a high-level pipeline that allows a client and server to call methods o
 
 Hubs call client-side code by sending messages that contain the name and parameters of the client-side method. Objects sent as method parameters are deserialized using the configured protocol. The client tries to match the name to a method in the client-side code. When the client finds a match, it calls the method and passes to it the deserialized parameter data.
 
+
+# Installation
+
+```
+
+npm install @aspnet/signalr –-save
+
+npm install ng2-charts --save
+
+npm install chart.js --save
+
+// in Angular.json 
+
+"scripts": [
+              "./node_modules/chart.js/dist/Chart.js"
+            ],
+
+```
+
 # Configuration 
 
 First add SignalR middleware to startup.cs. Then define the hubs to communicate with clients
