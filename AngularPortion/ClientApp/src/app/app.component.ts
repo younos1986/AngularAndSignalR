@@ -10,10 +10,6 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
   title = 'AngularAndSignalR';
 
-
-
-
-
   /** Chart ctor */
   constructor(public signalRService: SignalRService, private http: HttpClient) { }
 
@@ -21,6 +17,5 @@ export class AppComponent {
     this.signalRService.startConnection('https://localhost:44306/Signout');
     this.signalRService.addTransferChartDataListener();
   }
-
 
 }

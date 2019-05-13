@@ -32,7 +32,5 @@ namespace AngularAndSignalR.Controllers
 
             return Ok(new { Message = "Request Completed" });
         }
-
-
     }
 }
