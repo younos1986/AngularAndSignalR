@@ -3,11 +3,10 @@
 A part of the sample is taken from <a href='https://code-maze.com/netcore-signalr-angular/'> code-maze.com </a>
 
 
-
-<video width="320" height="240" controls>
-  <source src="https://raw.githubusercontent.com/younos1986/AngularAndSignalR/master/docs/videos/AngularAndSignalR.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-</video>
+  <img
+       width="320" height="240"
+       src="https://raw.githubusercontent.com/younos1986/AngularAndSignalR/master/docs/videos/AngularAndSignalR.mp4" type="video/mp4" />
+      
 
 
 
