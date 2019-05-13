@@ -30,6 +30,11 @@ namespace AngularAndSignalR.Controllers
 
             _hub.Clients.All.SendAsync("transferchartSignoutdata", signoutModel);
 
+
+                
+
+
+
             return Ok(new { Message = "Request Completed" });
         }
     }

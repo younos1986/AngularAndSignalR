@@ -29,9 +29,7 @@ export class SignalRService {
     });
 
     this.hubConnection.on('transferchartSignoutdata', (data) => {
-
       console.log(data);
-
     });
 
 

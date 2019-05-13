@@ -64,6 +64,11 @@ namespace AngularAndSignalR
                 routes.MapHub<ChartHub>("/chart");
                 routes.MapHub<SignoutHub>("/Signout");
 
+
+                
+
+
+
             });
             app.UseMvc();
         }

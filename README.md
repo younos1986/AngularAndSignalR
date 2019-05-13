@@ -214,6 +214,10 @@ namespace AngularAndSignalR.SignalRConfiguration.Signouts
             // Context.ConnectionId
             // Context.User
 
+			//Adding and removing users
+            //Groups.AddToGroupAsync(Context.ConnectionId, groupName);
+            //Groups.RemoveFromGroupAsync(Context.ConnectionId, groupName);
+			
             //var name = Context.User.Identity.Name;
             //using (var db = new UserContext())
             //{
@@ -263,5 +267,15 @@ namespace AngularAndSignalR.SignalRConfiguration.Signouts
 
 
 ```
+
+
+# Adding and removing users
+
+```  
+        Groups.AddToGroupAsync(Context.ConnectionId, groupName);
+        Groups.RemoveFromGroupAsync(Context.ConnectionId, groupName);
+			
+```
+
 
 
